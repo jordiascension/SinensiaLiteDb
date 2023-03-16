@@ -15,6 +15,8 @@ namespace Sinensia.Business.Logic
 
         public Student Add(Student student)
         {
+            if (student == null) 
+                throw new ArgumentNullException();
             student.Fullname = student.Name + " " + student.Surname;
             return crud.Add(student);
         }
@@ -31,6 +33,8 @@ namespace Sinensia.Business.Logic
 
         public bool Update(Student student)
         {
+            if (student == null)
+                throw new ArgumentNullException();
             student.Fullname = student.Name + " " + student.Surname;
             return crud.Update(student);
         }
