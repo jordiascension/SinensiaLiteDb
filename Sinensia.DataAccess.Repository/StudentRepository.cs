@@ -4,6 +4,7 @@ using Sinensia.Transversal.Model;
 
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,6 +29,47 @@ namespace Sinensia.DataAccess.Repository
 
                 return student;
             }
+        }
+
+        public bool Delete(int id)
+        {
+            using (var db = new LiteDatabase(@"C:\Temp\School.db"))
+            {
+                // Get a collection (or create, if doesn't exist)
+                var col = db.GetCollection<Student>("student");
+
+                return col.Delete(id);
+            }
+        }
+
+        public IEnumerable<Student> FindAll()
+        {
+            using (var db = new LiteDatabase(@"C:\Temp\School.db"))
+            {
+                // Get a collection (or create, if doesn't exist)
+                var studentEnumerable = db.GetCollection<Student>("student").
+                    FindAll().ToList();
+                
+                return studentEnumerable;
+            }
+        }
+
+        public bool Update(Student student)
+        {
+            using (var db = new LiteDatabase(@"C:\Temp\School.db"))
+            {
+                // Get a collection (or create, if doesn't exist)
+                var col = db.GetCollection<Student>("student");
+
+                var studentUpdated = col.FindById(student._id);
+                studentUpdated.Name = student.Name;
+                studentUpdated.Surname = student.Surname;
+                studentUpdated.Fullname = student.Fullname;
+                studentUpdated.Age = student.Age;
+
+                return col.Update(studentUpdated);   
+            }
+            
         }
     }
 }

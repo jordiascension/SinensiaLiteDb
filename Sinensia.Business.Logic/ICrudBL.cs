@@ -11,5 +11,8 @@ namespace Sinensia.Business.Logic
     public interface ICrudBL
     {
         Student Add(Student student);
+        IEnumerable<Student> FindAll();
+        bool Delete(int id);
+        bool Update(Student student);
     }
 }

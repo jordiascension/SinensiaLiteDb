@@ -11,5 +11,8 @@ namespace Sinensia.DataAccess.Repository
     public interface ICrud
     {
         Student Add(Student student);
+        IEnumerable<Student> FindAll();
+        bool Delete(int id);
+        bool Update(Student student);
     }
 }
