@@ -1,6 +1,7 @@
 ﻿using LiteDB;
 
 using Sinensia.Transversal.Model;
+using Sinensia.Transversal.Model.CustomExceptions;
 
 using System;
 using System.Collections.Generic;
@@ -62,6 +63,12 @@ namespace Sinensia.DataAccess.Repository
                 var col = db.GetCollection<Student>("student");
 
                 var studentUpdated = col.FindById(student._id);
+
+                if(studentUpdated == null) {
+                    throw new StudentNotFoundException("Student with id " + student._id 
+                        + " not found");
+                }
+
                 studentUpdated.Name = student.Name;
                 studentUpdated.Surname = student.Surname;
                 studentUpdated.Fullname = student.Fullname;

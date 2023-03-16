@@ -1,5 +1,6 @@
 ﻿using Sinensia.Business.Logic;
 using Sinensia.Transversal.Model;
+using Sinensia.Transversal.Model.CustomExceptions;
 
 using System;
 using System.Collections.Generic;
@@ -50,6 +51,10 @@ namespace Sinensia.Presentation.WinSite
             catch (OverflowException ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+            catch (StudentNotFoundException ex)
+            {
+                MessageBox.Show(ex.Message); 
             }
 
             loadStudents();
