@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33502.453
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Presentation Tier", "1. Presentation Tier", "{025817C3-69E4-468E-A36A-E0856B99360B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Business Tier", "2. Business Tier", "{57EB9936-DAF0-4AB2-BE67-2431835216DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. DataAccess Tier", "3. DataAccess Tier", "{BD213D7B-11B7-44E9-83ED-C76A3192A186}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Transversal Tier", "4. Transversal Tier", "{D773C4D9-362E-4AB3-901B-87486FD6B8C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sinensia.Presentation.WinSite", "Sinensia.Presentation.WinSite\Sinensia.Presentation.WinSite.csproj", "{D55A3ED4-E39C-40EE-8487-363E80C5D65C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sinensia.Business.Logic", "Sinensia.Business.Logic\Sinensia.Business.Logic.csproj", "{839D5A75-B583-4F8F-AAB4-B9BAD4AC286D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sinensia.DataAccess.Repository", "Sinensia.DataAccess.Repository\Sinensia.DataAccess.Repository.csproj", "{6828A795-CD0D-44BC-B804-8E8909904BBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sinensia.Transversal.Model", "Sinensia.Transversal.Model\Sinensia.Transversal.Model.csproj", "{0998338B-CD6A-4398-9C42-9D48048FFC75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D55A3ED4-E39C-40EE-8487-363E80C5D65C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D55A3ED4-E39C-40EE-8487-363E80C5D65C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D55A3ED4-E39C-40EE-8487-363E80C5D65C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D55A3ED4-E39C-40EE-8487-363E80C5D65C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{839D5A75-B583-4F8F-AAB4-B9BAD4AC286D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{839D5A75-B583-4F8F-AAB4-B9BAD4AC286D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{839D5A75-B583-4F8F-AAB4-B9BAD4AC286D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{839D5A75-B583-4F8F-AAB4-B9BAD4AC286D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6828A795-CD0D-44BC-B804-8E8909904BBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6828A795-CD0D-44BC-B804-8E8909904BBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6828A795-CD0D-44BC-B804-8E8909904BBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6828A795-CD0D-44BC-B804-8E8909904BBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0998338B-CD6A-4398-9C42-9D48048FFC75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0998338B-CD6A-4398-9C42-9D48048FFC75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0998338B-CD6A-4398-9C42-9D48048FFC75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0998338B-CD6A-4398-9C42-9D48048FFC75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D55A3ED4-E39C-40EE-8487-363E80C5D65C} = {025817C3-69E4-468E-A36A-E0856B99360B}
+		{839D5A75-B583-4F8F-AAB4-B9BAD4AC286D} = {57EB9936-DAF0-4AB2-BE67-2431835216DE}
+		{6828A795-CD0D-44BC-B804-8E8909904BBD} = {BD213D7B-11B7-44E9-83ED-C76A3192A186}
+		{0998338B-CD6A-4398-9C42-9D48048FFC75} = {D773C4D9-362E-4AB3-901B-87486FD6B8C1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A9F02334-D2F7-4D23-9CF3-392CC10BDB54}
+	EndGlobalSection
+EndGlobal
