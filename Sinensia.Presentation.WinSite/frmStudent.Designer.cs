@@ -38,6 +38,7 @@
             this.dgvStudents = new System.Windows.Forms.DataGridView();
             this.btnDelete = new System.Windows.Forms.Button();
             this.lblId = new System.Windows.Forms.Label();
+            this.btnAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
             this.SuspendLayout();
             // 
@@ -129,11 +130,22 @@
             this.lblId.TabIndex = 9;
             this.lblId.Visible = false;
             // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(327, 487);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(93, 34);
+            this.btnAdd.TabIndex = 10;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
             // frmStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(997, 665);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.dgvStudents);
@@ -165,6 +177,7 @@
         private System.Windows.Forms.DataGridView dgvStudents;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Label lblId;
+        private System.Windows.Forms.Button btnAdd;
     }
 }
 

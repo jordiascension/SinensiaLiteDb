@@ -17,10 +17,17 @@ namespace Sinensia.Presentation.WinSite
     public partial class frmStudent : Form
     {
         ICrudBL icrud = new StudentBL();
+        frmAddStudent frmAddStudentform = new frmAddStudent();
 
         public frmStudent()
         {
             InitializeComponent();
+            frmAddStudentform.AddStudent += FrmAddStudentform_AddStudent;
+        }
+
+        private void FrmAddStudentform_AddStudent()
+        {
+            loadStudents();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -119,6 +126,12 @@ namespace Sinensia.Presentation.WinSite
             }
            
             loadStudents();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            
+            frmAddStudentform.ShowDialog();
         }
     }
 }
